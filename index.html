@@ -22,15 +22,19 @@
       <link rel="stylesheet" href="css/stylesheet.css">
       <style>.invalid-feedback[data-astro-cid-svshx33u],.empty-feedback[data-astro-cid-svshx33u]{display:none}.was-validated[data-astro-cid-svshx33u] :-moz-placeholder-shown:invalid[data-astro-cid-svshx33u]~.empty-feedback[data-astro-cid-svshx33u]{display:block}.was-validated[data-astro-cid-svshx33u] :placeholder-shown:invalid[data-astro-cid-svshx33u]~.empty-feedback[data-astro-cid-svshx33u]{display:block}.was-validated[data-astro-cid-svshx33u] :not(:-moz-placeholder-shown):invalid[data-astro-cid-svshx33u]~.invalid-feedback[data-astro-cid-svshx33u]{display:block}.was-validated[data-astro-cid-svshx33u] :not(:placeholder-shown):invalid[data-astro-cid-svshx33u]~.invalid-feedback[data-astro-cid-svshx33u]{display:block}.is-invalid[data-astro-cid-svshx33u],.was-validated[data-astro-cid-svshx33u] :invalid[data-astro-cid-svshx33u]{border-color:#dc3545}</style>
       <link rel="stylesheet" href="css/stylesheet.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
       <script type="module">window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}a("js",new Date);a("config","G-LR9JE5GPDY");document.addEventListener("DOMContentLoaded",function(){document.getElementById("astronav-menu").addEventListener("click",()=>{[...document.querySelectorAll(".astronav-toggle")].forEach(e=>{e.classList.toggle("hidden")})});const o=document.querySelectorAll(".astronav-dropdown");o.forEach(e=>{const n=e.querySelector("button");n.addEventListener("click",r=>{e.classList.toggle("open"),e.setAttribute("aria-expanded",e.getAttribute("aria-expanded")==="true"?"false":"true"),e.hasAttribute("open")?e.removeAttribute("open"):e.setAttribute("open",""),n.nextElementSibling.classList.toggle("hidden"),Array.from(o).filter(t=>t!==e).forEach(t=>{t.classList.remove("open"),t.removeAttribute("open"),t.setAttribute("aria-expanded","false"),t.querySelector(".dropdown-toggle").classList.add("hidden")}),r.stopPropagation()})}),document.addEventListener("click",()=>{o.forEach(e=>{e.classList.remove("open"),e.removeAttribute("open"),e.setAttribute("aria-expanded","false")}),document.querySelectorAll(".dropdown-toggle").forEach(e=>e.classList.add("hidden"))})});</script>
    </head>
    <body class="bg-dark text-light h-screen">
+      <style>  html {scroll-behavior: smooth; }
+</style>
       <header class="lg:flex lg:justify-between py-3 px-6 gap-5">
          <div class="flex justify-between items-center">
-            <a href="/" class="text-xl no-underline text-light">Arthur Henrique</a> 
+            <a href="#topo" class="text-xl no-underline text-light">Arthur Henrique</a> 
             <div class="block lg:hidden">
                <button id="astronav-menu">
                   <svg fill="currentColor" class="w-4 h-4 text-gray-800" width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     
                      <title>Menu</title>
                      <path class="astronav-toggle hidden" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z"></path>
                      <path class="astronav-toggle" fill-rule="evenodd" d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"></path>
@@ -39,13 +43,13 @@
             </div>
          </div>
          <nav class="astronav-toggle hidden lg:flex">
-            <div class="flex flex-col lg:flex-row gap-3 lg:gap-5 py-5 lg:py-1 items-baseline"> <a href="/" class="nav-link-active">Início</a> <a href="/projects" class="nav-link">Projetos</a> <a href="/blog" class="nav-link">Blog</a> <a href="/contact" class="py-1 px-3 border border-solid border-blue cursor-pointer rounded-sm no-underline hover:bg-blue transition-colors duration-150 link-arrow"> 
+            <div class="flex flex-col lg:flex-row gap-3 lg:gap-5 py-5 lg:py-1 items-baseline"> <a href="#topo" class="nav-link-active">Início</a> <a href="#projetos" class="nav-link">Projetos</a> <a href="/blog" class="nav-link">Currículo</a> <a href="#contato" class="py-1 px-3 border border-solid border-blue cursor-pointer rounded-sm no-underline hover:bg-blue transition-colors duration-150 link-arrow"> 
                Contato
                <i class="bi bi-arrow-up-right"></i> </a> 
             </div>
          </nav>
       </header>
-      <section class="bg-grey-dark px-8 py-14 md:py-24">
+      <section id="contato" class="scroll-mt-20 bg-grey-dark px-8 py-14 md:py-24">
          <div class="container mx-auto">
             <div class="lg:w-2/3 xl:w-3/5">
                <div class="mb-5">
@@ -80,7 +84,7 @@
             </div>
          </div>
       </section>
-      <section class="px-8 py-14 md:py-24">
+      <section id="projetos" class="px-8 py-14 md:py-24">
          <div class="container mx-auto">
             <div class="flex flex-col gap-3 md:gap-0 md:flex-row">
                <div class="basis-2/5">
